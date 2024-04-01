@@ -87,6 +87,7 @@ button {
   align-items: center;
   justify-content: center;
   height: fit-content;
+  cursor: pointer;
 
   &.round {
     width: 40px;
@@ -94,6 +95,18 @@ button {
     border-radius: 50px;
     font-size: 18px;
     font-weight: 700;
+    background-color: #6e707a;
+    color: $text-color;
+
+    &.actived {
+      background-color: $text-color;
+      color: #110e3c;
+    }
+
+    &.unactived {
+      background-color: #585676;
+      color: $text-color;
+    }
   }
 }
 
@@ -113,18 +126,18 @@ button {
   .card-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin: 72px 0px;
+    gap: 20px;
 
     .card {
       background-color: $primary-color;
       padding: 18px 20px;
-      width: 120px;
       display: flex;
       flex-direction: column;
       align-items: center;
       max-height: 177px;
-      max-width: 120px;
+      min-width: 150px;
+      flex: 1;
 
       img {
         width: 50%;
@@ -223,5 +236,90 @@ button {
         }
       }
     }
+  }
+}
+
+.offcanvas {
+  width: 33%;
+  background-color: #1e213a;
+  padding: 12px 46px;
+
+  .offcanvas-header {
+    justify-content: flex-end;
+    padding: 0px;
+
+    button {
+      background-color: transparent;
+      box-shadow: none;
+      font-size: 24px;
+      padding: 10px;
+      color: $text-color;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 12px;
+    align-items: center;
+
+    .input {
+      padding: 12px;
+      border: 1px solid $text-color;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      flex-direction: row;
+      gap: 12px;
+      width: 70%;
+      height: 48px;
+      color: #616475;
+
+      input {
+        background-color: #1e213a;
+        border: 0;
+        outline: 0;
+        width: 100%;
+      }
+    }
+
+    button {
+      background-color: #3c47e9;
+      color: $text-color;
+      font-weight: 600;
+      width: 30%;
+      height: 48px;
+    }
+  }
+
+  .dropdown {
+    width: 100%;
+    height: 64px;
+    border: 1px solid #616475;
+    padding: auto 12px;
+    background-color: transparent;
+    box-shadow: none;
+    color: $text-color;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+}
+
+.footer {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  color: #a09fb1;
+  text-align: center;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+
+  span {
+    font-weight: 700;
   }
 }
