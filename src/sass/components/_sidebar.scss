@@ -1,0 +1,55 @@
+.sidebar {
+  width: 33%;
+  height: 100%;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .button-wrapper {
+    display: flex;
+    padding: 42px 46px;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: 160px;
+    height: auto;
+    margin-bottom: 60px;
+  }
+
+  .tempa {
+    font-size: 120px;
+    margin-bottom: 100px;
+  }
+
+  .weather {
+    color: #a09fb1;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+
+  .date {
+    font-size: 18px;
+    line-height: 21.13px;
+    color: $text-secondary-color;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .city {
+    font-size: 18px;
+    font-weight: 600;
+    color: $text-secondary-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+  }
+}
