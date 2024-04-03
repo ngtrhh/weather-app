@@ -2,9 +2,9 @@ import React from "react";
 
 const CurrentWeather = ({ data }) => {
   return (
-    <div>
+    <div className="current-weather">
       <h2>{"Today’s Hightlights"}</h2>
-      <div className="current-weather">
+      <div className="weather-container">
         {/* wind */}
         <div className="item">
           <div className="title">Wind status</div>

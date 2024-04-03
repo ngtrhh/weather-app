@@ -89,3 +89,57 @@ button {
     font-weight: 700;
   }
 }
+
+@media only screen and (max-width: 740px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+
+    .sidebar {
+      width: 100%;
+      padding: 42px 20px;
+    }
+
+    .container {
+      .top {
+        display: none;
+      }
+
+      .forecast {
+        margin: 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        .item {
+          max-width: 48%;
+        }
+      }
+
+      .current-weather {
+        margin: 20px 0px 40px;
+
+        .weather-container {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+
+          .item {
+            padding: 18px 0px;
+            min-width: 100%;
+            min-height: fit-content;
+
+            .content {
+              display: flex;
+              gap: 12px;
+            }
+
+            .progress-bar,
+            .label {
+              width: 72%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
